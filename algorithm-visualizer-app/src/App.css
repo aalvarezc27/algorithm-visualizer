@@ -3,11 +3,25 @@
   background-color: #000f1f;
   color: #ccffff;
   font-family: 'Bricolage Grotesque', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .App{
-
-
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  height:100vh;
+  align-items: center;
 }
 
+.array-container{
+  background-color: hsl(210 100% 12%);
+  height:65%;
+  width:95%;
+  margin-top:30px;
+}
+
+.form-container{
+  gap:20px;
+  display:flex;
+}

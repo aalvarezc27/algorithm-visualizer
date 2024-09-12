@@ -16,9 +16,14 @@
 
 .array-container{
   background-color: hsl(210 100% 12%);
-  height:65%;
+  height:70%;
   width:95%;
   margin-top:30px;
+  display:flex;
+  gap:8px;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom:30px;
 }
 
 .form-container{

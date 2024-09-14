@@ -3,8 +3,7 @@ import { fontFamily } from "@mui/system";
 import * as React from "react";
 import MenuItem from "@mui/material/MenuItem";
 
-export default function SelectAlgorithm() {
-  const [algorithmType, setAlgorithmType] = React.useState(1);
+export default function SelectAlgorithm({algorithmType, setAlgorithmType}) {
 
   const handleChange = (event) => {
     setAlgorithmType(event.target.value);

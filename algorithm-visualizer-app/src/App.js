@@ -5,10 +5,11 @@ import SelectAlgorithm from "./components/Select";
 import ArrayElement from "./components/ArrayElement";
 
 function App() {
-
   const [array, setArray] = useState(
-    Array.from({ length: 17 }, () => Math.floor((Math.random() * 100) + 1))
+    Array.from({ length: 17 }, () => Math.floor(Math.random() * 100 + 1))
   );
+
+  const [algorithmType, setAlgorithmType] = useState(1);
 
   return (
     <div className="App">
@@ -19,9 +20,13 @@ function App() {
           buttonColor="primary"
           buttonText="Visualize"
           array={array}
+          algorithm={algorithmType}
           setArray={setArray}
         />
-        <SelectAlgorithm />
+        <SelectAlgorithm
+          algorithmType={algorithmType}
+          setAlgorithmType={setAlgorithmType}
+        />{" "}
       </div>
       <div className="array-container">
         {array.map((value, index) => (
